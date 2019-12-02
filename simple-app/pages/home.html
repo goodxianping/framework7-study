@@ -1,0 +1,172 @@
+<template>
+    <div class="page" data-name="home">
+
+        <!-- Top Navbar -->
+        <div class="navbar navbar-large">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="link icon-only panel-open" data-panel="left">
+                        <i class="icon f7-icons if-not-md">menu</i>
+                        <i class="icon material-icons if-md">menu</i>
+                    </a>
+                </div>
+                <div class="title sliding">柳金车牌付</div>
+                <div class="right">
+                    <a href="#" class="link icon-only panel-open" data-panel="right">
+                        <i class="icon f7-icons if-not-md">menu</i>
+                        <i class="icon material-icons if-md">menu</i>
+                    </a>
+                </div>
+                <div class="title-large">
+                    <div class="title-large-text">柳金车牌付</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="toolbar toolbar-bottom">
+            <div class="toolbar-inner">
+                <a href="#" class="link">Link 1</a>
+                <a href="#" class="link">Link 2</a>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <a href="/about/" class="item-content item-link">
+                <div class="item-inner">
+                    <div class="item-title">关于车牌付</div>
+                </div>
+            </a>
+            <div class="block">
+                <p class="row">
+                    <button class="col button button-fill color-red">Red</button>
+                    <button class="col button button-fill color-green">Green</button>
+                    <button class="col button button-fill color-blue">Blue</button>
+                </p>
+                <p class="row">
+                    <button class="col button button-fill color-pink">Pink</button>
+                    <button class="col button button-fill color-yellow">Yellow</button>
+                    <button class="col button button-fill color-orange">Orange</button>
+                </p>
+                <p class="row">
+                    <button class="col button button-fill color-gray">Gray</button>
+                    <button class="col button button-fill color-black">Black</button>
+                    <button class="col button button-fill color-white text-color-black">White</button>
+                </p>
+            </div>
+            <div class="block">
+                <p class="row">
+                    <button class="col button button-raised">Button</button>
+                    <button class="col button button-raised button-fill">Fill</button>
+                    <button class="col button button-outline button-raised">Outline</button>
+                </p>
+                <p class="row">
+                    <button class="col button button-raised button-round">Round</button>
+                    <button class="col button button-raised button-fill button-round">Fill</button>
+                    <button class="col button button-outline button-round button-raised">Outline</button>
+                </p>
+            </div>
+            <div class="card data-table">
+                <table>
+                    <thead>
+                    <tr>
+                        <th class="label-cell">Desert (100g serving)</th>
+                        <th class="numeric-cell">Calories</th>
+                        <th class="numeric-cell">Fat (g)</th>
+                        <th class="numeric-cell">Carbs</th>
+                        <th class="numeric-cell">Protein (g)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="label-cell">Frozen yogurt</td>
+                        <td class="numeric-cell">159</td>
+                        <td class="numeric-cell">6.0</td>
+                        <td class="numeric-cell">24</td>
+                        <td class="numeric-cell">4.0</td>
+                    </tr>
+                    ...
+                    </tbody>
+                </table>
+                <div class="data-table-footer">
+                    <div class="data-table-rows-select">
+                        Per page:
+                        <div class="input input-dropdown">
+                            <select>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="all">All</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="data-table-pagination">
+                        <span class="data-table-pagination-label">1-5 of 10</span>
+                        <a href="#" class="link disabled">
+                            <i class="icon icon-prev color-gray"></i>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon icon-next color-gray"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list tablet-inset">
+                <ul>
+                    <li>
+                        <a href="#" class="item-link item-content">
+                            <div class="item-media"><i class="icon icon-f7"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title">Ivan Petrov</div>
+                                <div class="item-after">CEO</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link item-content">
+                            <div class="item-media"><i class="icon icon-f7"></i><i class="icon icon-f7"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title">Two icons here</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link item-content">
+                            <div class="item-media"><i class="icon icon-f7"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title">Ultra long text goes here, no, it is really really long
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="block-footer">
+                    <p>This list block will look like "inset" only on tablets (iPad)</p>
+                </div>
+            </div>
+            <div class="block-title">Picker with single value</div>
+            <div class="list no-hairlines-md">
+                <ul>
+                    <li>
+                        <div class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input type="text" placeholder="Your iOS device" readonly="readonly"
+                                           id="my-picker-device"/>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    let obj = (function () {
+        return {}
+    })();
+
+    return obj;
+</script>

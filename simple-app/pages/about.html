@@ -1,0 +1,57 @@
+<template>
+    <div class="page" data-name="about">
+        <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner sliding">
+                <div class="left">
+                    <a href="#" class="link back">
+                        <i class="icon icon-back"></i>
+                        <span class="if-not-md">返回</span>
+                    </a>
+                </div>
+                <div class="title">关于</div>
+            </div>
+        </div>
+        <div class="page-content">
+            <a @click="openAlert">Open Alert</a>
+            <div class="list simple-list">
+                <ul>
+                    {{#each names}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>
+<!-- component styles -->
+<style>
+    .red-link {
+        color: red;
+    }
+</style>
+<!-- rest of component data and methods -->
+<script>
+    // script must return component object
+    return {
+        data: function () {
+            return {
+                title: 'About Page',
+                names: ['John', 'Vladimir', 'Timo'],
+            }
+        },
+        methods: {
+            openAlert: function () {
+                var self = this.$app.dialog.alert('Hello world!');
+            },
+        },
+        on: {
+            pageInit: function () {
+                // do something on page init
+            },
+            pageAfterOut: function () {
+                // page has left the view
+            },
+        }
+    }
+</script>
